@@ -1,5 +1,6 @@
 const path = require('path');
 const nodeExternals = require('webpack-node-externals');
+const Nodemon = require('nodemon-webpack-plugin');
 
 const {
   NODE_ENV = 'production',
@@ -9,7 +10,7 @@ module.exports = {
   mode: NODE_ENV,
   target: 'node',
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'index.js'
   },
   resolve: {
@@ -23,5 +24,6 @@ module.exports = {
       ]
     }]
   },
+  plugins: [new Nodemon()],
   externals: [nodeExternals()],
 }
