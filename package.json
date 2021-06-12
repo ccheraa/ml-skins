@@ -1,0 +1,13 @@
+{
+    "name": "ml",
+    "version": "1.0.0",
+    "main": "src/index.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "node ."
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "sharp": "^0.28.3"
+    }
+}
