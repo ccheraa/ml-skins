@@ -1,4 +1,4 @@
 .vscode
 dist
-data/c
+data/c/*
 node_modules
